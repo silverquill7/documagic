@@ -1,0 +1,22 @@
+# bandit.yml
+exclude_dirs:
+  - tests
+  - migrations
+  - alembic
+  - .venv
+  - env
+  - build
+
+skips:
+  - B101   # assert_used (optional)
+  - B601   # subprocess_popen_with_shell_equals_true (if needed)
+
+severity: 
+  - LOW
+  - MEDIUM
+  - HIGH
+
+confidence:
+  - LOW
+  - MEDIUM
+  - HIGH
