@@ -1,0 +1,16 @@
+# Python environment
+venv/
+.env/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Ignore build + cache
+dist/
+build/
+

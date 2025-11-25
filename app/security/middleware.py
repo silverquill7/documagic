@@ -1,0 +1,2 @@
+from starlette.middleware.base import BaseHTTPMiddleware
+class SecurityHeaders(BaseHTTPMiddleware): async def dispatch(self,req,call): resp=await call(req); resp.headers['X-Frame-Options']='DENY'; return resp
